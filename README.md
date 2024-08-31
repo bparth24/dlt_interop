@@ -10,6 +10,41 @@ The architecture of the crosschain interoperability stack provides a standardize
 
 This layered architecture allows for the integration of components from different vendors, serving as a robust infrastructure for an array of crosschain applications.
 
+```markdown
+Architecture of the Crosschain Protocol Stack
+=========================
+
++-----------------------------------------+
+|                                         |
+|        Crosschain Applications Layer    |
+|                                         |
+|     Business Logic & Use Case-Specific  |
+|              Functionality              |
++-----------------------------------------+
+                 ↑
+                 |
+                 ↓
++-----------------------------------------+
+|                                         |
+|      Crosschain Function Calls Layer    |
+|                                         |
+|      Execution of Operations Across     |
+|              Multiple Networks          |
++-----------------------------------------+
+                 ↑
+                 |
+                 ↓
++-----------------------------------------+
+|                                         |
+|        Crosschain Messaging Layer       |
+|                                         |
+|    Secure Exchange of Data & Events     |
+|         Between Blockchain Networks     |
++-----------------------------------------+
+```
+This diagram provides a high-level overview of how the different layers interact and stack up to create a cohesive crosschain interoperability solution.
+
+
 ### **Crosschain Applications Layer: The Business Logic Hub**
 - **Overview:** This layer contains the business logic and use case-specific functionality for enterprise applications.
 - **Purpose:** Consider this the "brain" of the stack, where complex operations and decision-making processes are defined. It’s where enterprises implement the specific logic that drives their crosschain activities.
