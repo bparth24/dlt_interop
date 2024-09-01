@@ -10,5 +10,5 @@ This repository contains files related to sections of the [Enterprise Ethereum A
 | [Architecture of the Crosschain Protocol Stack](https://entethalliance.github.io/crosschain-interoperability/draft_dlt-interop_techspec.html#sec-protocol-stack)    | [Architecture of the Crosschain Protocol Stack](https://github.com/bparth24/dlt_interop/blob/main/Architecture%20of%20the%20Crosschain%20Protocol%20Stack.md) | Reviewer A | Pending |
 | [Multisig Relay](https://entethalliance.github.io/crosschain-interoperability/draft_dlt-interop_techspec.html#crosschain-message-relays)    | [Multisig Relay](https://github.com/bparth24/dlt_interop/blob/main/Multisig%20Relay.md) | Reviewer B | Pending |
 | [MPC Relay](https://entethalliance.github.io/crosschain-interoperability/draft_dlt-interop_techspec.html#crosschain-message-relays)    | [MPC Relay](https://github.com/bparth24/dlt_interop/blob/main/MPC%20Relay.md) | Reviewer C | Pending |
-| []()    | []() | Reviewer C | Pending |
+| [ZKP Relay](https://entethalliance.github.io/crosschain-interoperability/draft_dlt-interop_techspec.html#crosschain-message-relays)    | [ZKP Relay](https://github.com/bparth24/dlt_interop/blob/main/ZKP%20Relay.md) | Reviewer C | Pending |
 | []()    | []() | Reviewer C | Pending |
