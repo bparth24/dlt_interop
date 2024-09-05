@@ -4,7 +4,7 @@ This is the first draft as of Sep 01, 2024. It will require multiple iterations 
 
 ## Purpose of this Repository
 
-@bparth24 created this repository while reading the tech specs with the intention of simplifying and enhancing the readability of the content. The goal is to make complex concepts easier to understand by providing additional explanations, visuals, and improved sectioning. By re-writing sections of the [Enterprise Ethereum Alliance Distributed Ledger Technology Interoperability Technical Specification Draft Version 1.0](https://entethalliance.github.io/crosschain-interoperability/draft_dlt-interop_techspec.html), this repository aims to facilitate a better understanding of the material for all members involved. 
+Parth (@bparth24) created this repository while reading the tech specs with the intention of simplifying and enhancing the readability of the content. The goal is to make complex concepts easier to understand by providing additional explanations, visuals, and improved sectioning. By re-writing sections of the [Enterprise Ethereum Alliance Distributed Ledger Technology Interoperability Technical Specification Draft Version 1.0](https://entethalliance.github.io/crosschain-interoperability/draft_dlt-interop_techspec.html), this repository aims to facilitate a better understanding of the material for all members involved. 
 
 | EEA DLT Interop Tech Spec Section Link | Re-written section (Refer Link) | Reviewer | Vote (Approve/Reject) |
 |--------------|--------------------|----------|------------------------|
