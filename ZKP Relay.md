@@ -1,4 +1,4 @@
-### **ZKP (Zero Knowledge Proof) Relay**
+# **ZKP (Zero Knowledge Proof) Relay**
 
 **1. Overview**  
 The ZKP relay is a mechanism that leverages advanced cryptographic proof constructions to validate the integrity of crosschain messages without disclosing the actual content of the message. This approach emphasizes both privacy and security in crosschain communication.
@@ -25,7 +25,7 @@ ZKP relay enhances privacy by eliminating the exposure of message content and th
 **7. Example**  
 Consider a scenario where a blockchain network needs to verify the integrity of a message without revealing its contents. Using a ZKP relay, the sender can generate a proof that confirms the authenticity of the message. This proof is then verified by the target chain without ever exposing the message itself, ensuring both privacy and security.
 
-### **Sequence/Flow Diagram**
+## **Sequence/Flow Diagram**
 
 ```mermaid
 sequenceDiagram
@@ -46,8 +46,8 @@ sequenceDiagram
 
 **Disclaimer:** Below information is good to have in an appendix section for additional information.
 
-1. **Clarification on Trusted Setup:** In the SNARK-based relay section, we might want to elaborate slightly on what a "trusted setup ceremony" involves and why it's necessary, as readers might not be familiar with the term. 
-   
+1. **Clarification on Trusted Setup:** In the SNARK-based relay section, we might want to elaborate slightly on what a "trusted setup ceremony" involves and why it's necessary, as readers might not be familiar with the term.
+
 2. **Contrast STARKs and SNARKs:** Consider including a brief comparison highlighting when one might choose SNARKs over STARKs or vice versa, depending on the specific requirements of their application (e.g., efficiency vs. no trusted setup).
 
 3. **Provide a Practical Example:** Adding a real-world example or a simplified analogy could help readers better grasp the concept of ZKP relays, especially if they are unfamiliar with cryptographic proofs.

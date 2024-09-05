@@ -1,4 +1,5 @@
-**MPC (Multi-Party Computing) Relay:**
+# MPC (Multi-Party Computing) Relay
+
 MPC, or Multi-Party Computing, is a cryptographic technique where a computation is securely distributed across multiple nodes, ensuring that no single node has access to the complete data or secret. The MPC relay leverages this concept to securely relay messages across blockchain networks using a single relay address.
 
 **Step 1: Segmenting the Private Key**
@@ -27,7 +28,7 @@ By adopting MPC relays, crosschain communication becomes not only more secure bu
 
 ---
 
-### **MPC (Multi-Party Computing) Relay**
+## **MPC (Multi-Party Computing) Relay**
 
 **Overview**  
 The MPC relay differs from multisig in that it involves only a single relay address affiliated with the relaying activity between networks. This relay address does not have access to the full private key; instead, the private key is shared into segments and distributed in a cryptographically secure manner among a set of MPC nodes.

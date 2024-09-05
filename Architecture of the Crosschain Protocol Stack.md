@@ -62,11 +62,12 @@ This diagram provides a high-level overview of how the different layers interact
 
 ---
 
-## **Integration and Benefits**
+# Integration and Benefits
 
 When combined, these three layers create a protocol stack that is both robust and versatile, capable of meeting the complex demands of modern enterprises. By adhering to the Enterprise Ethereum Alliance's (EEA) Distributed Ledger Technology Interoperability Specification, this stack ensures that all components are interoperable, scalable, and secure.
 
-### **Focus on EVM Compatibility**
+## **Focus on EVM Compatibility**
+
 - The current specification primarily targets Ethereum Virtual Machine (EVM)-compatible blockchains due to their widespread adoption. However, it’s designed to be adaptable, supporting other architectures like Zero-Knowledge Proof (ZKP) compatible networks and R3 Corda. This adaptability ensures that the stack remains future-proof, accommodating an evolving digital ecosystem.
 
 ---
