@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multisig Relay</title>
+    <script type="module">
+      import mermaid from "https://cdn.jsdelivr.net/npm/mermaid@10/dist/mermaid.esm.min.mjs";
+      mermaid.initialize({ startOnLoad: true });
+    </script>
+  </head>
+  <body>
+    <h1>3.1 Multisig Relay</h1>
+
+    <h2>Overview Mechanism</h2>
+
+    <p>
+      This approach uses multiple signatures to verify and authenticate
+      messages. Here’s how it works:
+    </p>
+
+    <ol>
+      <li>
+        <strong>Message Signing:</strong>
+        <ul>
+          <li>
+            A message is created on the source chain and signed by several
+            independent relay nodes, each with a unique public key. These relay
+            nodes are part of a whitelist maintained by the target chain's smart
+            contract.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>Signature Aggregation:</strong>
+        <ul>
+          <li>
+            The signatures from these nodes are aggregated into a single
+            signature payload. This payload, along with the original message, is
+            sent from the source chain to the target chain.
+          </li>
+        </ul>
+      </li>
+      <li>
+        <strong>Verification:</strong>
+        <ul>
+          <li>
+            On the target chain, the smart contract checks the aggregated
+            signature against the whitelist to ensure it includes valid
+            signatures from the required number of trusted relayers. If the
+            verification is successful, the message is deemed authentic and
+            processed.
+          </li>
+        </ul>
+      </li>
+    </ol>
+
+    <h2>Security Features Section</h2>
+
+    <ul>
+      <li>
+        <strong>Decentralization:</strong> Multiple validators are involved in
+        signing the message, reducing the risk of a single point of failure.
+      </li>
+      <li>
+        <strong>Integrity Assurance:</strong> By requiring a threshold number of
+        signatures, multisig relay ensures that only messages with broad
+        consensus are trusted.
+      </li>
+      <li>
+        <strong>Availability:</strong> The approach provides higher availability
+        and robustness against attacks, as it relies on multiple independent
+        nodes.
+      </li>
+    </ul>
+
+    <h2>Analogy</h2>
+
+    <p>
+      Think of it like a secure bank transaction that requires approval from
+      multiple managers before it can be processed. Each manager signs off on
+      the transaction, and only if all signatures are valid does the transaction
+      go through.
+    </p>
+
+    <hr />
+
+    <p>
+      <strong
+        >Here below is the content as is from the spec just added sections for
+        better readability</strong
+      >
+    </p>
+
+    <hr />
+
+    <h2>Multisig Relay</h2>
+
+    <p>
+      Multisig relay is a mechanism that leverages multi-signature consensus for
+      relaying messages across blockchains. In this approach, the message
+      originating from a source chain is cryptographically signed by multiple
+      independent relay nodes.
+    </p>
+
+    <h2>Mechanism</h2>
+
+    <p>
+      <strong>Message Signing:</strong> These relay nodes or validators have
+      public key signatures that are registered and verified against a whitelist
+      of trusted nodes maintained on the target chain's smart contract.
+    </p>
+
+    <p>
+      <strong>Signature Aggregation:</strong> The relay nodes' signatures on the
+      message are aggregated and attached to the communication payload sent from
+      the source chain to the smart contract on the target chain.
+    </p>
+
+    <p>
+      <strong>Verification:</strong> The target chain's smart contract first
+      verifies that the aggregate signature comprises valid signatures from a
+      threshold number of trusted relayers according to the whitelist. This
+      blockchain-based consensus check establishes multiple attestations of the
+      message's authenticity and integrity. If the multi-signature passes the
+      policy set on the target chain, the message is deemed to have originated
+      genuinely from the source system and can be processed and trusted
+      accordingly by the target chain.
+    </p>
+
+    <h2>Security Features</h2>
+
+    <p>
+      By decentralizing the act of relaying through multiple participating
+      validators and embedding multi-signature thresholds on target chains,
+      multisig message relay aims to provide stronger security, availability,
+      and integrity assurances for crosschain messaging.
+    </p>
+
+    <h2>Example</h2>
+
+    <p>
+      Think of it like a secure bank transaction that requires approval from
+      multiple managers before it can be processed. Each manager signs off on
+      the transaction, and only if all signatures are valid does the transaction
+      go through.
+    </p>
+
+    <hr />
+
+    <h2>Sequence Diagram</h2>
+    <img src="MultisigRelay.svg" alt="Multisig Relay Diagram" />
+
+    <h2>Explanation</h2>
+
+    <ul>
+      <li>
+        <strong>SourceChain:</strong> Represents the blockchain where the
+        message originates.
+      </li>
+      <li>
+        <strong>RelayNode1</strong> and <strong>RelayNode2:</strong> Independent
+        relay nodes that sign the message.
+      </li>
+      <li>
+        <strong>TargetChain:</strong> Represents the blockchain where the
+        message is received and verified.
+      </li>
+    </ul>
+
+    <p><strong>Flow:</strong></p>
+
+    <ol>
+      <li>
+        The <strong>SourceChain</strong> sends the message to
+        <strong>RelayNode1</strong> and <strong>RelayNode2</strong> for signing.
+      </li>
+      <li>
+        Each relay node signs the message and sends its signature back to the
+        <strong>SourceChain</strong>.
+      </li>
+      <li>
+        The <strong>SourceChain</strong> aggregates the signatures from the
+        relay nodes.
+      </li>
+      <li>
+        The aggregated message and signatures are sent from the
+        <strong>SourceChain</strong> to the <strong>TargetChain</strong>.
+      </li>
+      <li>
+        The <strong>TargetChain</strong> verifies the aggregated signatures
+        against a whitelist and checks if the threshold is met.
+      </li>
+      <li>
+        If verification is successful, the
+        <strong>TargetChain</strong> processes the message and confirms its
+        authenticity.
+      </li>
+    </ol>
+  </body>
+</html>
